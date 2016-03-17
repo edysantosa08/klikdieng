@@ -30,5 +30,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "de.fastr.phonegap.plugins.injectView": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-fastrde-injectview"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -1,14 +1,14 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.klikdieng.app" version="1.0.0">
   <name>Dieng On App</name>
-  <description>Hello World sample application that responds to the deviceready event.</description>
-  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
+  <description>Info dan Marketplace Wisata Dieng dan sekitarnya.</description>
+  <author href="http://klikdieng.com" email="support@klikdieng.com">Dieng on App</author>
   <content src="index.html"/>
   <preference name="android-targetSdkVersion" value="15" />
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
-  <preference name="fullscreen" value="true"/>
-  <preference name="webviewbounce" value="true"/>
+  <preference name="fullscreen" value="false"/>
+  <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false" />
   <preference name="prerendered-icon" value="true"/>
   <preference name="stay-in-webview" value="false"/>
