@@ -8,6 +8,7 @@
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="true"/>
   <preference name="webviewbounce" value="true"/>
+  <preference name="UIWebViewBounce" value="false" />
   <preference name="prerendered-icon" value="true"/>
   <preference name="stay-in-webview" value="false"/>
   <preference name="ios-statusbarstyle" value="black-opaque"/>
@@ -16,6 +17,7 @@
   <preference name="show-splash-screen-spinner" value="true"/>
   <preference name="auto-hide-splash-screen" value="true"/>
   <preference name="disable-cursor" value="false"/>
+  <preference name="DisallowOverscroll" value="true" />
   <preference name="android-minSdkVersion" value="14"/>
   <preference name="android-installLocation" value="auto"/>
   <gap:plugin name="org.apache.cordova.battery-status"/>
@@ -63,7 +65,6 @@
   <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
-  <plugin name="hu.dpal.phonegap.plugins.spinnerdialog" spec="1.2.0" source="pgb" />
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
