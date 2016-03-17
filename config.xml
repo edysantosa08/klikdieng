@@ -3,7 +3,6 @@
   <description>Info dan Marketplace Wisata Dieng dan sekitarnya.</description>
   <author href="http://klikdieng.com" email="support@klikdieng.com">Dieng on App</author>
   <content src="index.html"/>
-  <preference name="android-targetSdkVersion" value="15" />
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
@@ -50,8 +49,8 @@
   <icon src="www/res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
   <icon src="www/res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
   <icon src="www/res/icon/webos/icon-64.png" gap:platform="webos"/>
-  <icon src="www/res/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
-  <icon src="www/res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
+  <icon src="www/res/icon/windows-phone/icon-36-ldpi.png" gap:platform="winphone"/>
+  <icon src="www/res/icon/windows-phone/icon-36-ldpi.png" gap:platform="winphone" gap:role="background"/>
   <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
   <gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
   <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
