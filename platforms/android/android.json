@@ -1,0 +1,108 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpinnerPlugin\"><param name=\"android-package\" value=\"net.justincredible.SpinnerPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"webView\" value=\"de.fastr.phonegap.plugins.InjectWebViewEngine\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Inject\"><param name=\"android-package\" value=\"de.fastr.phonegap.plugins.Inject\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.klikdieng.app"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.klikdieng.app"
+        },
+        "cordova-plugin-spinner": {
+            "PACKAGE_NAME": "com.klikdieng.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.klikdieng.app"
+        },
+        "de.fastr.phonegap.plugins.injectView": {
+            "PACKAGE_NAME": "com.klikdieng.app"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "id": "cordova-plugin-dialogs.notification",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+            "id": "cordova-plugin-dialogs.notification_android",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-spinner/www/spinner-plugin.js",
+            "id": "cordova-plugin-spinner.SpinnerPlugin",
+            "clobbers": [
+                "SpinnerPlugin"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/de.fastr.phonegap.plugins.injectView/www/inject.js",
+            "id": "de.fastr.phonegap.plugins.injectView.inject",
+            "clobbers": [
+                "inject"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-dialogs": "1.2.0",
+        "cordova-plugin-inappbrowser": "1.2.1",
+        "cordova-plugin-spinner": "1.0.0",
+        "cordova-plugin-whitelist": "1.2.1",
+        "de.fastr.phonegap.plugins.injectView": "0.2.0"
+    }
+}
