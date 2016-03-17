@@ -63,6 +63,7 @@
   <gap:splash src="www/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
   <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
   <gap:plugin name="cordova-plugin-spinnerdialog" source="npm" />
+  <plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <allow-intent href="http://app.klikdieng.com/*"/>
